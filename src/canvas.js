@@ -28,7 +28,7 @@ const Canvas = props => {
         <input type={"text"} value={state} maxLength={9} onChange={(e) => {
            setState(e.target.value)
         }}/>
-        <p>Charatcrers left = {9 - (state.length || 0)}</p>
+        <p>Characters left = {9 - (state.length || 0)}</p>
         <canvas ref={canvasRef} style={{border: '1px solid black'}} width={200} height={200} {...props}/>
 
     </div>
